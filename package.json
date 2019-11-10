@@ -16,8 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "react-icons": "^3.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.0",
