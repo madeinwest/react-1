@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import Card from "./Card";
 import Loading from './Loading'
+import Tooltip from './Tooltip'
 
 
 function ProfileList({ profile }) {
@@ -23,14 +24,18 @@ function ProfileList({ profile }) {
       </li>
       {profile.location && (
         <li>
+					<Tooltip text='Users location'>
           <FaCompass color="rgb(144, 115, 244)" size={22} />
           {profile.location}
+					</Tooltip>
         </li>
       )}
       {profile.company && (
         <li>
+					<Tooltip text='Users company'>
           <FaBriefcase color="#795548" size={22} />
           {profile.company}
+					</Tooltip>
         </li>
       )}
       <li>
