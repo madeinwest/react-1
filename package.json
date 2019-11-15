@@ -7,7 +7,10 @@
     "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
-    ]
+		],
+		"plugins":[
+			"@babel/plugin-proposal-class-properties"
+		]
   },
   "scripts": {
     "start": "webpack-dev-server --open"
@@ -17,12 +20,15 @@
   "license": "ISC",
   "dependencies": {
     "prop-types": "^15.7.2",
+    "query-string": "^6.9.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-icons": "^3.8.0"
+    "react-icons": "^3.8.0",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "babel-loader": "^8.0.6",
