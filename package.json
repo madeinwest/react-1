@@ -7,18 +7,21 @@
     "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
-		],
-		"plugins":[
-			"@babel/plugin-proposal-class-properties"
-		]
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "syntax-dynamic-import"
+    ]
   },
   "scripts": {
-    "start": "webpack-dev-server --open"
+		"start": "webpack-dev-server --open",
+		"build": "SET NODE_ENV='production' && webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.9.0",
     "react": "^16.11.0",
